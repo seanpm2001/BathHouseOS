@@ -1,0 +1,129 @@
+# BathHouse hardware blueprints
+
+## Bath
+
+### Sensors
+
+#### Threshold 1
+
+Threshold 1 sensor height:
+
+Centimeters: 10.0
+Inches: 3.93
+Meters: 0.1
+Feet: 0.32
+
+#### Threshold 2
+
+Threshold 2 sensor height:
+
+Centimeters: 20.0
+Inches: 7.8
+Meters: 0.2
+Feet: 0.65
+
+#### Threshold 3
+
+Threshold 3 sensor height:
+
+Centimeters: 30.0
+Inches: 11.8
+Meters: 0.3
+Feet: 0.98
+
+#### Threshold 4
+
+Threshold 4 sensor height:
+
+Centimeters: 40.0
+Inches: 15.74
+Meters: 0.4
+Feet: 1.31
+
+#### Threshold 5
+
+Threshold 5 sensor height:
+
+Centimeters: 50.0
+Inches: 19.78
+Meters: 0.5
+Feet: 1.64
+
+#### Threshold 6
+
+Threshold 6 sensor height:
+
+Centimeters: 60.0
+Inches: 23.62
+Meters: 0.6
+Feet: 1.96
+
+#### Threshold 7
+
+Threshold 7 sensor height:
+
+Centimeters: 70.0
+Inches: 27.55
+Meters: 0.7
+Feet: 2.29
+
+#### Threshold 8
+
+Threshold 8 sensor height:
+
+Centimeters: 80.0
+Inches: 31.94
+Meters: 0.8
+Feet: 2.62
+
+#### Threshold 9
+
+Threshold 9 sensor height:
+
+Centimeters: 90.0
+Inches: 35.43
+Meters: 0.9
+Feet: 2.95
+
+#### Threshold 10
+
+Threshold 10 sensor height:
+
+Centimeters: 100.0
+Inches: 39.37
+Meters: 1.0
+Feet: 3.28
+
+### Trigger
+
+Water must be touching all sensors in a threshold before the water can be stopped.
+
+This is due to the fact that water splashes a lot. It could trigger several sensors, while the tub is nearly empty.
+
+To solve this, the water must be touching all sensors at once (indicating that the bathtub is as deep as threshold x)
+
+If a user has threshold 1 selected as their limit, threshold 1 sensors will be active.
+
+If a user has threshold 2 selected as their limit, threshold 2 sensors will be active.
+
+Repeat this pattern up to threshold 10, where if a user has threshold 10 selected as their limit, threshold 10 sensors will be active.
+
+### Bathtub size
+
+Not all bathtubs are 1 meter deep. The most common bathtub is 18 inches deep.
+
+For most bathtubs, it is recommended to choose either threshold 1, 2, 3, or 4 as the default limit.
+
+### Specification info
+
+Version: 1 (2022, Monday, May 9th at 4:47 pm PST)
+
+License: GPL3 (GNU General Public License V3.0)
+
+Blueprint file format: API Blueprint (.apib)
+
+Line count (including blank lines and compiler line): 130
+
+Open Source Hardware!
+
+---
